@@ -1,0 +1,77 @@
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: rgb(203, 203, 203);
+}
+main {
+	min-height: 100%;
+	padding-top: 124px;
+}
+.btn:focus,
+.btn:active {
+	outline: none !important;
+	box-shadow: none !important;
+}
+.navbar {
+	background: rgb(9, 9, 121);
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 35%, rgba(255, 149, 19, 0.7) 90%);
+	.navbar-brand img {
+		width: 200px;
+	}
+	.nav-item {
+		transition: background-color 0.3s ease-in-out;
+		border-radius: 10%;
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.7);
+		}
+	}
+}
+.nav-link {
+	font-size: 1.5em;
+	color: black !important;
+}
+@media only screen and (min-width: 992px) {
+	#menuButton {
+		display: none;
+	}
+}
+.project-image img {
+	width: 100%;
+}
+.headlines {
+	border-bottom: 1px solid grey;
+}
+.kontaktInfo {
+	img {
+		max-width: 24px;
+		max-height: 24px;
+		margin-right: 10px;
+	}
+	a {
+		margin: 0px;
+		color: black;
+		&:hover {
+			color: blue;
+		}
+	}
+	p {
+		margin: 0px;
+	}
+	li {
+		max-width: 350px;
+	}
+}
+.kontaktImg {
+	margin-top: 5px;
+}
+.kontaktMap {
+	min-width: 100%;
+	max-width: 100%;
+}
+div.projektiCarousel {
+	max-height: 500px !important;
+	max-width: 700px;
+}
+div.projektiCarousel img {
+	width: 640px;
+	height: 360px;
+}

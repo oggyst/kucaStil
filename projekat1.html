@@ -5,15 +5,16 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Kuća Stil Svilajnac" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
-		<link rel="manifest" href="/assets/icons/site.webmanifest" />
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png" />
+		<link rel="manifest" href="assets/icons/site.webmanifest" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.css" />
-		<link rel="stylesheet" href="/assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="assets/photoswipe/photoswipe.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
 		<title>Kuća Stil</title>
 	</head>
 	<body>
@@ -21,10 +22,10 @@
 			<nav class="navbar navbar-expand-lg shadow-lg fixed-top">
 				<div class="container">
 					<a class="navbar-brand" href="http://testt.kuca-stil.com">
-						<img src="/assets/images/logo.png" alt="Navbar brand" />
+						<img src="assets/images/logo.png" alt="Navbar brand" />
 					</a>
 					<button id="menuButton" class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-						<img class="navbar-toggler-icon" src="/assets/icons/menu.svg" alt="menu" />
+						<img class="navbar-toggler-icon" src="assets/icons/menu.svg" alt="menu" />
 					</button>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="d-flex navbar-nav w-100 justify-content-end">
@@ -55,7 +56,7 @@
 			<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
 				<div class="offcanvas-header">
 					<a class="navbar-brand" href="http://testt.kuca-stil.com">
-						<img src="/assets/images/logo.png" alt="Navbar brand" />
+						<img src="assets/images/logo.png" alt="Navbar brand" />
 					</a>
 					<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
@@ -86,62 +87,60 @@
 			</div>
 		</header>
 		<main>
-			<div class="container d-flex flex-column mt-5 align-items-center">
-				<h1 class="headlines w-100 mb-5 pb-3 text-center">Smederevo</h1>
-				<div class="row row-cols-1 row-cols-xl-2 g-0">
-					<div class="col kontaktInfo fs-4 d-flex justify-content-xl-start justify-content-center">
-						<ul class="p-0">
-							<li class="d-flex align-items-center justify-content-start">
-								<img src="/assets/icons/user-tie.svg" />
-								<p>Snežana Đikić</p>
-							</li>
-							<li class="d-flex align-items-center my-1 justify-content-start">
-								<img src="/assets/icons/phone.svg" />
-								<a href="tel:+38126642700"> +381 26 642 700 </a>
-							</li>
-							<li class="d-flex align-items-center my-1 justify-content-start">
-								<img src="/assets/icons/smartphone.svg" />
-								<a href="tel:+381631032561"> +381 63 1032 561 </a>
-							</li>
-							<li class="d-flex align-items-center my-1 justify-content-start">
-								<img src="/assets/icons/fax.svg" />
-								<p>+381 26 4100 114</p>
-							</li>
-							<li class="d-flex align-items-center my-1 justify-content-start">
-								<img src="/assets/icons/mail.svg" />
-								<a href="mailto:sdkucastil@gmail.com"> sdkucastil@gmail.com </a>
-							</li>
-							<li class="d-flex align-items-start my-1 justify-content-start">
-								<img class="kontaktImg" src="/assets/icons/map-pin.svg" />
-								<p>
-									Jovana Krajšnika 16 lok. 36,<br />
-									Smederevo 11300, Srbija
-								</p>
-							</li>
-							<li class="d-flex align-items-start my-1 justify-content-start">
-								<img class="kontaktImg" src="/assets/icons/clock.svg" />
-								<p>
-									Ponedeljak - Petak<br />08:30 - 16:30<br />
-									Vikendom ne radimo
-								</p>
-							</li>
-						</ul>
+			<div class="mt-5">
+				<div class="row row-cols-xl-2 g-0">
+					<div class="fs-5 row row-cols-1 px-5">
+						<h1 class="headlines w-100 mb-5 pb-3 text-center">Porodični stambeni objekat sa podrumom i prizemljem
+						</h1>
+						<p class="text-center">
+							Objekat u prizemlju sadrži stambenu jedinicu sa dnevnim boravkom i tri spavaće sobe. U podrumu se silazi rampom i tu je projektovana garaža sa pomoćnim prostorijama. Stambeni objekat je
+							projektovan u masivnom sistemu gradnje, sa zidovima od giter bloka d=25cm, sa vertikalnim i horizontalnim serklažima i polumontažnom fert-tavanicom. Krovna konstrukcija je drvena, a
+							pokrivač je crep. Materijalizacija objekta je uradjena završnom obradom: bavalitom preko demit fasade. Predviđeno je kombinovano grejanje: podno, na električnu energiju i lokalno, na
+							čvrsto gorivo. GABARIT: UKUPNA NETO OBJEKTA: 191,28 m2 UKUPNA BRUTO OBJEKTA: 245,82 m2
+						</p>
 					</div>
-					<div class="d-flex justify-content-center justify-content-xl-start col mb-5">
-						<iframe
-							class="kontaktMap"
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2837.879503043107!2d20.926954115906653!3d44.660813479099694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475093c176c6f529%3A0xf0d55cf469607f90!2sKuca%20Stil!5e0!3m2!1sen!2srs!4v1649523407031!5m2!1sen!2srs"
-							width="600"
-							height="450"
-							style="border: 0"
-							allowfullscreen=""
-							loading="lazy"
-							referrerpolicy="no-referrer-when-downgrade"
-						></iframe>
+					<div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+						<div id="projektiCarousel1" class="carousel slide projektiCarousel d-flex" data-bs-ride="carousel">
+							<div class="carousel-inner justify-content-center w-100 mb-2">
+								<div class="carousel-item active rounded-3 w-100">
+									<a href="assets/images/7.jpg" data-pswp-width="1920" data-pswp-height="1080" target="_blank">
+										<img src="assets/images/7.jpg" alt="" class="rounded-3 d-flex justify-content-center mx-auto" />
+									</a>
+								</div>
+								<div class="carousel-item rounded-3">
+									<a href="assets/images/-V1-f FRONT IDR kompleks Zoco R-K a18.jpg" data-pswp-width="1920" data-pswp-height="1080" target="_blank">
+										<img src="assets/images/-V1-f FRONT IDR kompleks Zoco R-K a18.jpg" alt="" class="rounded-3 d-flex justify-content-center mx-auto" />
+									</a>
+								</div>
+								<div class="carousel-item rounded-3">
+									<a href="assets/images/V2-1 front.jpg" data-pswp-width="1920" data-pswp-height="1080" target="_blank">
+										<img src="assets/images/V2-1 front.jpg" alt="" class="rounded-3 d-flex justify-content-center mx-auto" />
+									</a>
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#projektiCarousel1" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#projektiCarousel1" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</main>
-		<script src="/assets/js/bootstrap.bundle.js" defer></script>
+		<script type="module">
+			import PhotoSwipeLightbox from "/assets/photoswipe/photoswipe-lightbox.esm.js";
+
+			const lightbox = new PhotoSwipeLightbox({
+				gallery: "#gallery--getting-started",
+				children: "a",
+				pswpModule: () => import("/assets/photoswipe/photoswipe.esm.js"),
+			});
+			lightbox.init();
+		</script>
+		<script src="assets/js/bootstrap.bundle.js" defer></script>
 	</body>
 </html>
